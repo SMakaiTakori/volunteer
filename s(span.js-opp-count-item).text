@@ -1,0 +1,169 @@
+=> [1;34m#(Element:0x3fffef668148 {[0m
+  name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m,
+  attributes = [ [1;34m#(Attr:0x3fffef4e701c {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msearchitem PUBLIC[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3fffef4e7008 {[0m name = [31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mopp3265982[1;31m"[0m[31m[0m })],
+  children = [
+    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m      [1;35m\n[0m[31m              [1;31m"[0m[31m[0m),
+    [1;34m#(Element:0x3fffef865748 {[0m
+      name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+      attributes = [ [1;34m#(Attr:0x3fffef864d48 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mrwd_listing_wrapper[1;31m"[0m[31m[0m })],
+      children = [
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                [1;35m\n[0m[31m                [1;31m"[0m[31m[0m),
+        [1;34m#(Element:0x3fffef87d58c {[0m
+          name = [31m[1;31m"[0m[31mh3[1;31m"[0m[31m[0m,
+          children = [
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                  [1;35m\n[0m[31m                    [1;35m\n[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef87e748 {[0m
+              name = [31m[1;31m"[0m[31ma[1;31m"[0m[31m[0m,
+              attributes = [
+                [1;34m#(Attr:0x3fffef883d74 {[0m name = [31m[1;31m"[0m[31mdata-linktype[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mopp[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3fffef883d4c {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m/search/opp3265982.jsp[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3fffef883d38 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mlink-body-text psr_link[1;31m"[0m[31m[0m })],
+              children = [
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                      [1;31m"[0m[31m[0m),
+                [1;34m#(Element:0x3fffef8b4e9c {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef8b4280 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mjs-opp-count-item[1;31m"[0m[31m[0m })] }),
+                [1;34m#(Text [0m[31m[1;31m"[0m[31mTaylor Swift at March Madness: Volunteers Needed[1;35m\n[0m[31m                    [1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                  [1;35m\n[0m[31m                [1;31m"[0m[31m[0m)]
+          }),
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                [1;31m"[0m[31m[0m),
+        [1;34m#(Element:0x3fffef457de0 {[0m
+          name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+          attributes = [ [1;34m#(Attr:0x3fffef4708cc {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31morgid[1;31m"[0m[31m[0m })],
+          children = [
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                  [1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef677210 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef680d88 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mgray-med[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mwith[1;31m"[0m[31m[0m)] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                     [1;35m\n[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef6e61c4 {[0m
+              name = [31m[1;31m"[0m[31ma[1;31m"[0m[31m[0m,
+              attributes = [
+                [1;34m#(Attr:0x3fffef6f12cc {[0m name = [31m[1;31m"[0m[31mdata-linktype[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31morg[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3fffef6f1290 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m/search/org1177127.jsp[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3fffef6f122c {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mpsr_link[1;31m"[0m[31m[0m })],
+              children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mCCWOA and the NFL Alumni[1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                  [1;35m\n[0m[31m                [1;31m"[0m[31m[0m)]
+          }),
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m                [1;35m\n[0m[31m[1;35m\n[0m[31m                [1;31m"[0m[31m[0m),
+        [1;34m#(Element:0x3fffef79131c {[0m name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef7903f4 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msearchitem_divider rwd_display[1;31m"[0m[31m[0m })] }),
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m                [1;35m\n[0m[31m                [1;35m\n[0m[31m                [1;35m\n[0m[31m                  [1;35m\n[0m[31m                [1;35m\n[0m[31m[1;35m\n[0m[31m                [1;31m"[0m[31m[0m),
+        [1;34m#(Element:0x3fffef784f04 {[0m
+          name = [31m[1;31m"[0m[31mp[1;31m"[0m[31m[0m,
+          attributes = [ [1;34m#(Attr:0x3fffef787ca4 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msearchitem_desc ellipsis_vert[1;31m"[0m[31m[0m })],
+          children = [
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                    [1;35m\n[0m[31mHello Volunteer Match, NCAA and Taylor Swift fans The 2020 NCAA March Madness Music Festival is happening in Atlanta for three days of...[1;35m\n[0m[31m                  [1;35m\n[0m[31m                  [1;35m\n[0m[31m                    [1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m    [1;35m\n[0m[31m    [1;35m\n[0m[31m        [1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef7ba4ec {[0m
+              name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3fffef7c5720 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mgeotag[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3fffef7c570c {[0m name = [31m[1;31m"[0m[31mxmlns:geo[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m//www.w3.org/2003/01/geo/wgs84_pos#[1;31m"[0m[31m[0m })],
+              children = [
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m            ([1;31m"[0m[31m[0m),
+                [1;34m#(Element:0x3fffef7c7c64 {[0m name = [31m[1;31m"[0m[31mlat[1;31m"[0m[31m[0m, children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31m33.76182[1;31m"[0m[31m[0m)] }),
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m,[1;31m"[0m[31m[0m),
+                [1;34m#(Element:0x3fffef4bcfc4 {[0m name = [31m[1;31m"[0m[31mlong[1;31m"[0m[31m[0m, children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31m-84.39453[1;31m"[0m[31m[0m)] }),
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m)[1;35m\n[0m[31m        [1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m    [1;35m\n[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m                  [1;35m\n[0m[31m                  [1;35m\n[0m[31m                  [1;35m\n[0m[31m                  [1;35m\n[0m[31m                  [1;35m\n[0m[31m                [1;31m"[0m[31m[0m)]
+          }),
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m                [1;31m"[0m[31m[0m),
+        [1;34m#(Element:0x3fffef4e7d64 {[0m
+          name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m,
+          attributes = [ [1;34m#(Attr:0x3fffef4e6e14 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mlowerinfo[1;31m"[0m[31m[0m })],
+          children = [
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                      [1;35m\n[0m[31m                        [1;35m\n[0m[31m                        [1;35m\n[0m[31m                          [1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef8448b8 {[0m
+              name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3fffef84a18c {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msearch_opp_location[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3fffef84a164 {[0m name = [31m[1;31m"[0m[31mtitle[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mDistance : 0.9624711[1;31m"[0m[31m[0m })],
+              children = [
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                          [1;31m"[0m[31m[0m),
+                [1;34m#(Element:0x3fffef870fa8 {[0m
+                  name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+                  attributes = [ [1;34m#(Attr:0x3fffef870468 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31moppaddress ym_rwd_show rwd_show[1;31m"[0m[31m[0m })],
+                  children = [
+                    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                            [1;31m"[0m[31m[0m),
+                    [1;34m#(Element:0x3fffef87e720 {[0m
+                      name = [31m[1;31m"[0m[31ma[1;31m"[0m[31m[0m,
+                      attributes = [
+                        [1;34m#(Attr:0x3fffef883810 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mhttp://maps.google.com/?h1=en&saddr=Current%20Location&daddr=Centennial Olympic Park, 265 Park Ave W NW, Atlanta, GA  30313, US[1;31m"[0m[31m[0m }),
+                        [1;34m#(Attr:0x3fffef8837fc {[0m name = [31m[1;31m"[0m[31mtarget[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m_blank[1;31m"[0m[31m[0m })],
+                      children = [
+                        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                              [1;31m"[0m[31m[0m),
+                        [1;34m#(Element:0x3fffef8a0a3c {[0m name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef8adc28 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msearch_results_sprite placemark_holder[1;31m"[0m[31m[0m })] }),
+                        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                            [1;31m"[0m[31m[0m)]
+                      }),
+                    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                            [1;31m"[0m[31m[0m),
+                    [1;34m#(Element:0x3fffef8b8f74 {[0m
+                      name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+                      attributes = [ [1;34m#(Attr:0x3fffef8b8448 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mopp_address[1;31m"[0m[31m[0m })],
+                      children = [
+                        [1;34m#(Element:0x3fffef8c87d0 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef3f97b8 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstreet-address[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mCentennial Olympic Park[1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Element:0x3fffef45dd30 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef42f6ec {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstreet-address2[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31m265 Park Ave W NW[1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Element:0x3fffef68773c {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef6a4d50 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mlocality[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mAtlanta, [1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Text [0m[31m[1;31m"[0m[31m [1;31m"[0m[31m[0m),
+                        [1;34m#(Element:0x3fffef6f1934 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef6f5d54 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mregion[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mGA[1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Text [0m[31m[1;31m"[0m[31m  [1;31m"[0m[31m[0m),
+                        [1;34m#(Element:0x3fffef7654d8 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef7649d4 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mpostal-code[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31m30313[1;31m"[0m[31m[0m)] })]
+                      }),
+                    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                          [1;31m"[0m[31m[0m)]
+                  }),
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                          [1;31m"[0m[31m[0m),
+                [1;34m#(Element:0x3fffef77b2d8 {[0m
+                  name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+                  attributes = [ [1;34m#(Attr:0x3fffef77a784 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mrwd_display[1;31m"[0m[31m[0m })],
+                  children = [
+                    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                            [1;31m"[0m[31m[0m),
+                    [1;34m#(Element:0x3fffef7b5794 {[0m name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef7b4984 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msearch_results_sprite placemark_holder[1;31m"[0m[31m[0m })] }),
+                    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                            [1;31m"[0m[31m[0m),
+                    [1;34m#(Element:0x3fffef7d2dd0 {[0m
+                      name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+                      attributes = [ [1;34m#(Attr:0x3fffef7d2254 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mopp_address[1;31m"[0m[31m[0m })],
+                      children = [
+                        [1;34m#(Element:0x3fffef7e63d0 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef7c7dcc {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstreet-address[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mCentennial Olympic Park[1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Element:0x3fffef4bc164 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef4f2ebc {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mstreet-address2[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31m265 Park Ave W NW[1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Element:0x3fffef7db020 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef7decac {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mlocality[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mAtlanta, [1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Text [0m[31m[1;31m"[0m[31m [1;31m"[0m[31m[0m),
+                        [1;34m#(Element:0x3fffef84b4c4 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef84e890 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mregion[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mGA[1;31m"[0m[31m[0m)] }),
+                        [1;34m#(Text [0m[31m[1;31m"[0m[31m  [1;31m"[0m[31m[0m),
+                        [1;34m#(Element:0x3fffef8710d4 {[0m name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef870300 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mpostal-code[1;31m"[0m[31m[0m })], children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31m30313[1;31m"[0m[31m[0m)] })]
+                      }),
+                    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                          [1;31m"[0m[31m[0m)]
+                  }),
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                        [1;35m\n[0m[31m                      [1;35m\n[0m[31m                    [1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                    [1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef898bc0 {[0m
+              name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m,
+              attributes = [ [1;34m#(Attr:0x3fffef898184 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31moppdate ym_rwd_show[1;31m"[0m[31m[0m })],
+              children = [
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                      [1;31m"[0m[31m[0m),
+                [1;34m#(Element:0x3fffef8a3700 {[0m name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef8a2af8 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31msearch_results_sprite oppdate_detail_icon[1;31m"[0m[31m[0m })] }),
+                [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                      [1;35m\n[0m[31m                        [1;35m\n[0m[31m                          2020-04-03 -[1;35m\n[0m[31m                          2020-04-05[1;35m\n[0m[31m                        [1;35m\n[0m[31m                        [1;35m\n[0m[31m                        [1;35m\n[0m[31m                      [1;35m\n[0m[31m                      [1;35m\n[0m[31m                     [1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                     [1;35m\n[0m[31m                        [1;35m\n[0m[31m                        [1;35m\n[0m[31m                        [1;35m\n[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef8c91bc {[0m
+              name = [31m[1;31m"[0m[31ma[1;31m"[0m[31m[0m,
+              attributes = [
+                [1;34m#(Attr:0x3fffef23d9b0 {[0m name = [31m[1;31m"[0m[31mdata-linktype[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mmore[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3fffef23d898 {[0m name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31m/search/opp3265982.jsp[1;31m"[0m[31m[0m }),
+                [1;34m#(Attr:0x3fffef23d654 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mbtn btn--sm read_more psr_link[1;31m"[0m[31m[0m })],
+              children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31mLearn More[1;31m"[0m[31m[0m)]
+              }),
+            [1;34m#(Element:0x3fffef668404 {[0m name = [31m[1;31m"[0m[31mbr[1;31m"[0m[31m[0m }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                     [1;35m\n[0m[31m                  [1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef6a9fbc {[0m name = [31m[1;31m"[0m[31mp[1;31m"[0m[31m[0m, children = [ [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                    [1;35m\n[0m[31m[1;35m\n[0m[31m                  [1;31m"[0m[31m[0m)] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                [1;31m"[0m[31m[0m)]
+          }),
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                [1;31m"[0m[31m[0m),
+        [1;34m#(Comment [0m[31m[1;31m"[0m[31m end lowerinfo for 3265982 [1;31m"[0m[31m[0m),
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m                [1;31m"[0m[31m[0m),
+        [1;34m#(Element:0x3fffef70289c {[0m
+          name = [31m[1;31m"[0m[31mspan[1;31m"[0m[31m[0m,
+          attributes = [ [1;34m#(Attr:0x3fffef70ae34 {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mrwd_show[1;31m"[0m[31m[0m })],
+          children = [
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m),
+            [1;34m#(Element:0x3fffef764948 {[0m name = [31m[1;31m"[0m[31mdiv[1;31m"[0m[31m[0m, attributes = [ [1;34m#(Attr:0x3fffef78db7c {[0m name = [31m[1;31m"[0m[31mclass[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mclear[1;31m"[0m[31m[0m }), [1;34m#(Attr:0x3fffef78db68 {[0m name = [31m[1;31m"[0m[31mstyle[1;31m"[0m[31m[0m, value = [31m[1;31m"[0m[31mheight: 0px;[1;31m"[0m[31m[0m })] }),
+            [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m)]
+          }),
+        [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m              [1;31m"[0m[31m[0m)]
+      }),
+    [1;34m#(Comment [0m[31m[1;31m"[0m[31m end rwd_listing_wrapper [1;31m"[0m[31m[0m),
+    [1;34m#(Text [0m[31m[1;31m"[0m[31m[1;35m\n[0m[31m    [1;31m"[0m[31m[0m)]
+  })

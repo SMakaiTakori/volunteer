@@ -6,14 +6,13 @@ require "colorize"
 
 class Volunteer::VolunteerController
 
-    BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categories=39"
-  
+    
     def welcome
         puts "Welcome to the ATL Volunteer App!"
         puts "Please type 'list' to see a list of current volunteer opportunities focused on reducing Hunger in Atlanta, GA : "
         input = gets.strip
         #will take in input and return a list of volunteer opportunities/titles
-
+        Volunteer::Scraper.scrape_titles
      end
     
      def prompt
