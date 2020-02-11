@@ -24,7 +24,7 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
             {:description => details.css("div#short_desc").text.strip
              :address => details.css("div.col-7 address").text.strip,
              :date => details.css("div.date-start").text,
-             :requirements => details.css("ul.list") 
+             :requirements => details.css("ul.list").text.strip 
             }           
         end
     end
