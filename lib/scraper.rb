@@ -22,12 +22,10 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
         
         details_page.css("div.grid.grid--container.justify-space-between.opp-dtl").collect do |details|           
             {:description => details.css("div#short_desc").text.strip
-            #  :address => details.css(""),
-            #  :date => details.css(""),
-            #  :requirements => details.css("") 
-            }
-            binding.pry
-             
+             :address => details.css("div.col-7 address").text.strip,
+             :date => details.css("div.date-start").text,
+             :requirements => details.css("ul.list") 
+            }           
         end
     end
 
