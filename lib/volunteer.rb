@@ -5,14 +5,14 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
     @@all = []
 
     def initialize(attributes)
-        attributes.each {|key, value}
+        attributes.each {|key, value|
         begin
             self.send(("#{key}="), value)
             @@all << self
         rescue NoMethodError
             
         end
-        }        
+        }       
     end
 
     def self.create_from_collection(list_array)
@@ -22,7 +22,7 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
     end
 
     def self.all
-        @all
+        @@all
     end
     
 end

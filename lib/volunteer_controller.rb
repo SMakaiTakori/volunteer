@@ -12,7 +12,7 @@ class Volunteer::VolunteerController
         puts "Please type 'list' to see a list of current volunteer opportunities focused on reducing Hunger in Atlanta, GA : "
         input = gets.strip
         #will take in input and return a list of volunteer opportunities/titles and organization names
-        Volunteer::Scraper.scrape_titles
+       make_list
     end
     
     def prompt
@@ -32,6 +32,7 @@ class Volunteer::VolunteerController
     def make_list
         list_array = Volunteer::Scraper.scrape_titles
         Volunteer::Volunteer.create_from_collection(list_array)
+        Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)
     end
 
 
@@ -41,7 +42,7 @@ class Volunteer::VolunteerController
         input = gets.strip
         
         if input == 'list'
-            puts Volunteer::Scraper.scrape_titles
+            puts 
         else 
             puts "Invalid input, please try again."
             self.get_titles
