@@ -1,7 +1,4 @@
-# require_relative "../lib/scraper.rb"
-# require_relative "../lib/volunteer.rb"
-# require "nokogiri"
-# require "colorize"
+
 require "pry"
 
 class Volunteer::VolunteerController
@@ -37,7 +34,7 @@ class Volunteer::VolunteerController
     end
 
 
-     def get_list(input)
+    def get_list(input)
         
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         input = gets.strip
@@ -48,7 +45,7 @@ class Volunteer::VolunteerController
             puts "Invalid input, please try again."
             self.get_titles
         end
-        binding.pry
+       
     end
 
     def display_list

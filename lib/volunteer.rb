@@ -30,6 +30,5 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
 
     def self.all
         @@all
-    end
-    
+    end    
 end
