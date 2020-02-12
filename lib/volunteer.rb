@@ -21,6 +21,13 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
         end
     end
 
+    def add_list(list_hash)
+        list_hash.each do |key, value|
+            self.send("#{key}=, value")
+        end
+        self
+    end
+
     def self.all
         @@all
     end

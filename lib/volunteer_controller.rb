@@ -1,7 +1,7 @@
-require_relative "../lib/scraper.rb"
-require_relative "../lib/volunteer.rb"
-require "nokogiri"
-require "colorize"
+# require_relative "../lib/scraper.rb"
+# require_relative "../lib/volunteer.rb"
+# require "nokogiri"
+# require "colorize"
 require "pry"
 
 class Volunteer::VolunteerController
@@ -32,24 +32,29 @@ class Volunteer::VolunteerController
     def make_list
         list_array = Volunteer::Scraper.scrape_titles
         Volunteer::Volunteer.create_from_collection(list_array)
-        Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)
+        # needs to go inside make details method
+        # Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)
     end
 
 
      def get_list(input)
-        binding.pry
+        
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         input = gets.strip
         
         if input == 'list'
-            puts 
+            self.display_list
         else 
             puts "Invalid input, please try again."
             self.get_titles
         end
-        
+        binding.pry
     end
 
+    def display_list
+        
+
+    end
 
 
     #  def display_details
