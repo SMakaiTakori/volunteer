@@ -10,6 +10,7 @@ class Volunteer::VolunteerController
         input = gets.strip
         #will take in input and return a list of volunteer opportunities/titles and organization names
        make_list
+       get_list(input)
     end
     
     def prompt
@@ -43,14 +44,15 @@ class Volunteer::VolunteerController
             self.display_list
         else 
             puts "Invalid input, please try again."
-            self.get_titles
-        end
-       
+            self.get_list
+        end      
     end
 
     def display_list
-        
-
+        self.add_list.each_with_index do |title, index|
+            puts "#{index + 1}. #{title[title][organization]}"
+            binding.pry
+        end
     end
 
 
