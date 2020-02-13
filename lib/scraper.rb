@@ -10,7 +10,7 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
     
         main_page.css("div.search-page").collect do |info|
             {:title => info.css("a.link-body-text.psr_link").text.strip,
-            :organization => info.css("span.orgid a.psr_link").text,
+            :organization => info.css("span.orgid a.psr_link").text.strip,
             :learn_more => info.css("a").attr("href").value   
             }         
             # binding.pry               
@@ -28,6 +28,4 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
             }           
         end
     end
-
-
 end

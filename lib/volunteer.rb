@@ -13,7 +13,7 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
 
     def self.create_from_collection(list_array)
         list_array.each do |hash|
-            self.new(hash)
+            Volunteer::Volunteer.new(hash)
         end
     end
 

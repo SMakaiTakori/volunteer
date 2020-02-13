@@ -2,7 +2,6 @@
 require "pry"
 
 class Volunteer::VolunteerController
-
     
     def welcome
         puts "Welcome to the ATL Volunteer App!"
@@ -10,16 +9,15 @@ class Volunteer::VolunteerController
         #will take in input and return a list of volunteer opportunities/titles and organization names
        make_list
        get_list
-    #    prompt
-    end
-    
-    
+       prompt
+    end   
 
     def make_list
         list_array = Volunteer::Scraper.scrape_titles
         Volunteer::Volunteer.create_from_collection(list_array)
         # needs to go inside make details method
         # Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)
+    
     end
 
     def get_list           
@@ -36,8 +34,7 @@ class Volunteer::VolunteerController
             else                 
                 puts "Invalid input, please try again."
                 self.get_list
-            end          
-                    
+            end                            
         end      
     end
 
@@ -57,15 +54,26 @@ class Volunteer::VolunteerController
         end  
     end
 
-    def display_list
-        puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
-        Volunteer::Volunteer.all.each.with_index do |list, index|
-            puts "#{index +1}. #{list.title}" 
-        # binding.pry
-        end
+    def compile_titles      
+        titles = Volunteer::Volunteer.all.split("\n")
+        clean_titles = []
+            for title in titles do 
+                if title.strip.length > 0                
+                clean_titles << title.strip
+                end
+            end
+           clean_titles
     end
- 
-    
+
+
+    def display_list 
+            puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "            
+            
+            self.compile_titles do |list, index|            
+            puts "#{index +1}. #{list.title}"            
+            # binding.pry        
+            end
+    end    
 
     def quit_app
         exit
