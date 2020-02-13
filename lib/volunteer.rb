@@ -22,11 +22,7 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
     #         self.send("#{key}=", value)
     #     end
     #     self
-    # end
-
-    def title
-        @title
-    end
+    # end    
 
     def self.all
         @@all
