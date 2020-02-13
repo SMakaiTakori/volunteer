@@ -13,19 +13,7 @@ class Volunteer::VolunteerController
     #    prompt
     end
     
-    def prompt
-        puts "Would you like to see more details about these opportunities, type 'Yes' or 'No' to continue "      
-        input = gets.strip 
-        
-        if input.downcase == 'yes'
-                display_details
-        elsif input.downcase == 'no'
-                welcome
-        else 
-            puts "Invalid input, please try again."
-                prompt   
-        end  
-    end
+    
 
     def make_list
         list_array = Volunteer::Scraper.scrape_titles
@@ -41,26 +29,42 @@ class Volunteer::VolunteerController
             input = gets.strip
         
             if input.downcase == 'list'            
-                display_list
-                prompt
+                self.display_list
+                self.prompt
             elsif input.downcase == 'quit'
-                quit_app   
+                self.quit_app   
             else                 
                 puts "Invalid input, please try again."
-                get_list
+                self.get_list
             end          
                     
         end      
     end
 
+    def prompt
+        puts "Would you like to see more details about these opportunities, type 'Yes' or 'No' to continue "      
+        input = gets.strip 
+        
+        if input.downcase == 'yes'
+            self.display_details
+        elsif input.downcase == 'no'
+            self.welcome
+        elsif input.downcase == 'quit'
+            self.quit_app
+        else    
+            puts "Invalid input, please try again."
+                self.prompt   
+        end  
+    end
+
     def display_list
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
-        Volunteer::Volunteer.all.each.with_index do |title, index|
-            puts "#{index + 1}. #{title.title} with the #{title.organization} organization "
+        Volunteer::Volunteer.all.each.with_index do |list, index|
+            puts "#{index +1}. #{list.title}" 
         # binding.pry
         end
     end
-
+ 
     
 
     def quit_app
