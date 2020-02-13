@@ -28,6 +28,7 @@ class Volunteer::VolunteerController
         
             if input.downcase == 'list'            
                 self.display_list
+                # self.print_list
                 self.prompt
             elsif input.downcase == 'quit'
                 self.quit_app   
@@ -54,26 +55,18 @@ class Volunteer::VolunteerController
         end  
     end
 
-    def compile_titles      
-        titles = Volunteer::Volunteer.all.split("\n")
-        clean_titles = []
-            for title in titles do 
-                if title.strip.length > 0                
-                clean_titles << title.strip
-                end
-            end
-           clean_titles
-    end
-
-
-    def display_list 
-            puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "            
-            
-            self.compile_titles do |list, index|            
-            puts "#{index +1}. #{list.title}"            
-            # binding.pry        
-            end
+    def display_list
+        puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
+        Volunteer::Volunteer.all.each.with_index do |list, index|            
+            puts "#{index + 1}. #{list.title}"           
+        end                    
     end    
+
+    # def print_list
+        
+    #    end
+   
+   
 
     def quit_app
         exit

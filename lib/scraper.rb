@@ -8,12 +8,12 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
     def self.scrape_titles
         main_page = Nokogiri::HTML(open(BASE_PATH))
     
-        main_page.css("div.search-page").collect do |info|
+        main_page.css("div.searchitem.PUBLIC").collect do |info|
             {:title => info.css("a.link-body-text.psr_link").text.strip,
             :organization => info.css("span.orgid a.psr_link").text.strip,
             :learn_more => info.css("a").attr("href").value   
             }         
-            # binding.pry               
+                           
         end   
     end 
 

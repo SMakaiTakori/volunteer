@@ -13,15 +13,19 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
 
     def self.create_from_collection(list_array)
         list_array.each do |hash|
-            Volunteer::Volunteer.new(hash)
+            self.new(hash)
         end
     end
 
-    def add_list(list_hash)
-        list_hash.each do |key, value|
-            self.send("#{key}=", value)
-        end
-        self
+    # def add_list(list_hash)
+    #     list_hash.each do |key, value|
+    #         self.send("#{key}=", value)
+    #     end
+    #     self
+    # end
+
+    def title
+        @title
     end
 
     def self.all
