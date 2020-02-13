@@ -10,7 +10,7 @@ class Volunteer::VolunteerController
         #will take in input and return a list of volunteer opportunities/titles and organization names
        make_list
        get_list
-       prompt
+    #    prompt
     end
     
     def prompt
@@ -55,11 +55,13 @@ class Volunteer::VolunteerController
 
     def display_list
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
-        Volunteer::Volunteer.all.each_with_index do |title, index|
+        Volunteer::Volunteer.all.each.with_index do |title, index|
             puts "#{index + 1}. #{title.title} with the #{title.organization} organization "
         # binding.pry
         end
     end
+
+    
 
     def quit_app
         exit
