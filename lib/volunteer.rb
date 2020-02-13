@@ -8,7 +8,7 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
         attributes.each do |key, value|
             self.send("#{key}=", value)
         end
-            @@all << self                
+        @@all << self                
     end
 
     def self.create_from_collection(list_array)

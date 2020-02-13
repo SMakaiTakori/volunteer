@@ -18,12 +18,12 @@ class Volunteer::VolunteerController
         input = gets.strip 
         
         if input.downcase == 'yes'
-            puts self.display_details
+                display_details
         elsif input.downcase == 'no'
-            puts self.welcome
+                welcome
         else 
             puts "Invalid input, please try again."
-            self.prompt   
+                prompt   
         end  
     end
 
@@ -34,24 +34,35 @@ class Volunteer::VolunteerController
         # Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)
     end
 
-    def get_list        
+    def get_list           
+        input = nil
+
+        while input != 'quit' 
+            input = gets.strip
         
-        input = gets.strip
-        
-        if input.downcase == 'list'            
-            display_list
-        else 
-            puts "Invalid input, please try again."
-            get_list
+            if input.downcase == 'list'            
+                display_list
+                prompt
+            elsif input.downcase == 'quit'
+                quit_app   
+            else                 
+                puts "Invalid input, please try again."
+                get_list
+            end          
+                    
         end      
     end
 
     def display_list
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         Volunteer::Volunteer.all.each_with_index do |title, index|
-            puts "#{index + 1}. #{title.title}"
+            puts "#{index + 1}. #{title.title} with the #{title.organization} organization "
         # binding.pry
         end
+    end
+
+    def quit_app
+        exit
     end
 
 
