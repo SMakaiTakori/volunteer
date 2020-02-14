@@ -23,8 +23,7 @@ class Volunteer::VolunteerController
 
     def make_details       
         details_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)                
-        Volunteer::Volunteer.create_from_collection(details_array) 
-            binding.pry   
+        Volunteer::Volunteer.create_from_collection(details_array)        
          
     end
 
@@ -75,7 +74,10 @@ class Volunteer::VolunteerController
         end                    
     end        
    
-    def display_details        
+    def display_details 
+        input = gets.strip.to_i
+        Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)     
+     
         puts "Here is a list of details for the opportunity you chose: "    
     
     end
