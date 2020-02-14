@@ -10,20 +10,21 @@ class Volunteer::VolunteerController
         puts "Please type 'list' to see a list of current volunteer opportunities focused on reducing Hunger in Atlanta, GA : "
         #will take in input and return a list of volunteer opportunities/titles and organization names
        make_list
+    #    make_details
        get_input
        prompt
     end   
 
     def make_list
         list_array = Volunteer::Scraper.scrape_titles
-        Volunteer::Volunteer.create_from_collection(list_array)     
+        Volunteer::Volunteer.create_from_collection(list_array)    
          
     end
 
-    def make_details
-       
-        list_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)        
-        Volunteer::Volunteer.create_from_collection(list_array)      
+    def make_details       
+        details_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)                
+        Volunteer::Volunteer.create_from_collection(details_array) 
+            binding.pry   
          
     end
 
@@ -56,7 +57,7 @@ class Volunteer::VolunteerController
         input = gets.strip 
         
         if input.downcase == 'yes'
-            puts "Please enter the number of the opportunity you would like more details on : "
+            puts "Please enter the number (1-10) of the opportunity you would like more details on : "
             self.display_details
         elsif input.downcase == 'no'
             puts "See you later, have a great day!"
