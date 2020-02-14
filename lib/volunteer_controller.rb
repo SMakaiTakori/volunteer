@@ -16,20 +16,21 @@ class Volunteer::VolunteerController
 
     def make_list
         list_array = Volunteer::Scraper.scrape_titles
-        Volunteer::Volunteer.create_from_collection(list_array)       
+        Volunteer::Volunteer.create_from_collection(list_array)     
+         
     end
 
-    def show_details
-        details_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)
-        Volunteer::Volunteer.create_from_collection(details_array)
-        binding.pry
-
+    def make_details
+       
+        list_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)        
+        Volunteer::Volunteer.create_from_collection(list_array)      
+         
     end
 
     def get_input           
         input = nil
 
-        while input != 'quit' 
+        while input != 'no' 
             input = gets.strip
         
             if input.downcase == 'list'            
@@ -55,6 +56,7 @@ class Volunteer::VolunteerController
         input = gets.strip 
         
         if input.downcase == 'yes'
+            puts "Please enter the number of the opportunity you would like more details on : "
             self.display_details
         elsif input.downcase == 'no'
             puts "See you later, have a great day!"
@@ -68,7 +70,7 @@ class Volunteer::VolunteerController
     def display_list
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         Volunteer::Volunteer.all.each.with_index do |list, index|            
-            puts "#{index + 1}. #{list.title}"           
+            puts "#{index + 1}. #{list.title} : #{list.organization} "           
         end                    
     end        
    
