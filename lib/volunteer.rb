@@ -1,9 +1,9 @@
 class Volunteer::Volunteer
 
-attr_accessor :title, :organization, :address, :description, :date, :requirements, :learn_more
+attr_accessor :name, :title, :organization, :address, :description, :date, :requirements, :learn_more
 
     @@all = []
-
+    
     def initialize(attributes)
         attributes.each do |key, value|
             self.send("#{key}=", value)
@@ -25,6 +25,7 @@ attr_accessor :title, :organization, :address, :description, :date, :requirement
     # end    
 
     def self.all
-        @@all
+        @@all        
     end    
+
 end

@@ -11,22 +11,24 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
         main_page.css("div.searchitem.PUBLIC").collect do |info|
             {:title => info.css("a.link-body-text.psr_link").text.strip,
             :organization => info.css("span.orgid a.psr_link").text.strip,
-            :learn_more => info.css("a").attr("href").value   
+            :learn_more => info.css("a").attr("href").value, 
+            # :description => info.css(".searchitem_desc.ellipsis_vert").text.delete("\n" && "33.76182,-84.39453").strip
+            # :address => info.css("div.lower_info span.search_opp_location").text,
+            # :date => info.css("div.oppdate.ym_rwd_show")
             }     
-                                         
+                                        
         end   
     end 
 
     def self.scrape_details(learn_more)
-        details_page = Nokogiri::HTML(open(BASE_PATH + learn_more))
-        binding.pry
-        details_page.css("div.grid.grid--container.justify-space-between.opp-dtl").collect do |details|           
+        details_page = Nokogiri::HTML(open("https://www.volunteermatch.org" + learn_more))
+        
+        details_page.css("div.grid.grid--container.justify-space-between.opp-dtl").collect do |details|               
             {:description => details.css("div#short_desc").text.strip,
              :address => details.css("div.col-7 address").text.strip,
              :date => details.css("div.date-start").text,
              :requirements => details.css("ul.list").text.strip              
             }           
-           
         end
     end
 end

@@ -21,11 +21,11 @@ class Volunteer::VolunteerController
          
     end
 
-    def make_details       
-        details_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)                
-        Volunteer::Volunteer.create_from_collection(details_array)        
-         
-    end
+    # def make_details       
+    #     details_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)                
+    #     Volunteer::Volunteer.create_from_collection(details_array)        
+    #     binding.pry
+    # end
 
     def get_input           
         input = nil
@@ -38,12 +38,7 @@ class Volunteer::VolunteerController
                 self.prompt
             elsif input.downcase == 'no'
                 puts "See you later, have a great day!"
-                self.quit_app   
-            # elsif input.to_i <= Volunteer::Volunteer.all.length && input.to_i > 0
-            #     self.current_opportunity = Volunteer::Volunteer.all[input.to_i-1]   
-            #     puts ""
-
-
+                self.quit_app        
             else                 
                 puts "Invalid input, please try again."
                 self.get_input
@@ -57,7 +52,8 @@ class Volunteer::VolunteerController
         
         if input.downcase == 'yes'
             puts "Please enter the number (1-10) of the opportunity you would like more details on : "
-            self.display_details
+            input = gets.strip.to_i
+            self.display_details(input)
         elsif input.downcase == 'no'
             puts "See you later, have a great day!"
             self.quit_app        
@@ -74,12 +70,16 @@ class Volunteer::VolunteerController
         end                    
     end        
    
-    def display_details 
-        input = gets.strip.to_i
-        Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)     
+    def display_details(input) 
+        
+        description = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[input - 1].learn_more)[0][:description] 
+        Volunteer::Volunteer.create_from_collection(input)     
      
-        puts "Here is a list of details for the opportunity you chose: "    
-    
+        puts "Here is a list of details for the opportunity you chose: " 
+
+        Volunteer::Volunteer.all.each.with_index do |list, index|  
+        puts "#{list.description}"
+        end
     end
 
     def quit_app
