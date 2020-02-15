@@ -1,4 +1,3 @@
-
 class Volunteer::VolunteerController
     
     def welcome
@@ -52,7 +51,7 @@ class Volunteer::VolunteerController
     def display_list
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         Volunteer::Volunteer.all.each.with_index do |list, index|            
-            puts "#{index + 1}. #{list.title}, Organization : #{list.organization} "           
+            puts "#{index + 1}. #{list.title}, Organization Name : #{list.organization} "           
         end                    
     end        
    
@@ -87,7 +86,7 @@ class Volunteer::VolunteerController
         end
         puts " "
        
-        puts "Type 'list' to see the list again!"
+        puts "Type 'list' to see the list again or 'no' to quit the app."
     end 
 
     def quit_app

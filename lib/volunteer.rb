@@ -15,14 +15,7 @@ attr_accessor :name, :title, :organization, :address, :description, :date, :requ
         list_array.each do |hash|
             self.new(hash)
         end
-    end
-
-    # def add_list(list_hash)
-    #     list_hash.each do |key, value|
-    #         self.send("#{key}=", value)
-    #     end
-    #     self
-    # end    
+    end 
 
     def self.all
         @@all        

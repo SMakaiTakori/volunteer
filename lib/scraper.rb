@@ -1,4 +1,3 @@
-
 class Volunteer::Scraper
 
 BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categories=39"      
@@ -21,9 +20,9 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
             {:description => details.css("div#short_desc").text.strip,
              :address => details.css("div.col-7 address").text.strip,
              :date => details.css("div.date-start").text,
-             :requirements => details.css("ul.list li").text.strip              
+             :requirements => details.css("ul.list li.item").text        
             }   
-            binding.pry
+            # binding.pry
         end
     end
 end
