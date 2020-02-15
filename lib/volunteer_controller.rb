@@ -7,12 +7,10 @@ class Volunteer::VolunteerController
     
     def welcome
         puts "Welcome to the ATL Volunteer App!"
-        puts "Please type 'list' to see a list of current volunteer opportunities focused on reducing Hunger in Atlanta, GA : "
-        #will take in input and return a list of volunteer opportunities/titles and organization names
-       make_list
-    #    make_details
-       get_input
-       prompt
+        puts "Please type 'list' to see a list of current volunteer opportunities focused on reducing Hunger in Atlanta, GA : "   
+        make_list
+        get_input
+        # prompt
     end   
 
     def make_list
@@ -60,7 +58,7 @@ class Volunteer::VolunteerController
     def display_list
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         Volunteer::Volunteer.all.each.with_index do |list, index|            
-            puts "#{index + 1}. #{list.title} : #{list.organization} "           
+            puts "#{index + 1}. #{list.title}, Organization : #{list.organization} "           
         end                    
     end        
    
@@ -73,15 +71,34 @@ class Volunteer::VolunteerController
         
         puts "Here is a list of details for volunteer opportunity number #{input} : "
 
-  
-        
-    end
+        puts " "
+        puts "Description: "
+        puts description 
+        puts " "
+        puts "Address: "   
+        puts address 
+        puts " "
+        puts "Date: "
+        if date != ""
+            puts date 
+        else
+            puts "No date listed"
+        end  
+        puts " "
+        puts "Requirements : "
+        if requirements != ""
+            puts requirements
+        else 
+            puts "No requirements listed"
+        end
+        puts " "
+       
+        puts "Type 'list' to see the list again!"
+    end 
 
     def quit_app
         exit
     end
 
-
+end    
     
-    
-end
