@@ -21,12 +21,6 @@ class Volunteer::VolunteerController
          
     end
 
-    # def make_details       
-    #     details_array = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[0].learn_more)                
-    #     Volunteer::Volunteer.create_from_collection(details_array)        
-    #     binding.pry
-    # end
-
     def get_input           
         input = nil
 
@@ -71,15 +65,16 @@ class Volunteer::VolunteerController
     end        
    
     def display_details(input) 
-        
+         
         description = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[input - 1].learn_more)[0][:description] 
-        Volunteer::Volunteer.create_from_collection(input)     
-     
-        puts "Here is a list of details for the opportunity you chose: " 
+        address = Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)[0][:address]   
+        date = Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)[0][:date]   
+        requirements = Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)[0][:requirements]   
+        
+        puts "Here is a list of details for volunteer opportunity number #{input} : "
 
-        Volunteer::Volunteer.all.each.with_index do |list, index|  
-        puts "#{list.description}"
-        end
+  
+        
     end
 
     def quit_app
