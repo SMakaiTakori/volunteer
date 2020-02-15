@@ -1,5 +1,3 @@
-require 'open-uri'
-require 'pry'
 
 class Volunteer::Scraper
 
@@ -11,12 +9,8 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
         main_page.css("div.searchitem.PUBLIC").collect do |info|
             {:title => info.css("a.link-body-text.psr_link").text.strip,
             :organization => info.css("span.orgid a.psr_link").text.strip,
-            :learn_more => info.css("a").attr("href").value, 
-            # :description => info.css(".searchitem_desc.ellipsis_vert").text.delete("\n" && "33.76182,-84.39453").strip
-            # :address => info.css("div.lower_info span.search_opp_location").text,
-            # :date => info.css("div.oppdate.ym_rwd_show")
-            }     
-                                        
+            :learn_more => info.css("a").attr("href").value
+            }                                           
         end   
     end 
 
@@ -27,8 +21,9 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
             {:description => details.css("div#short_desc").text.strip,
              :address => details.css("div.col-7 address").text.strip,
              :date => details.css("div.date-start").text,
-             :requirements => details.css("ul.list").text.strip              
-            }           
+             :requirements => details.css("ul.list li").text.strip              
+            }   
+            binding.pry
         end
     end
 end

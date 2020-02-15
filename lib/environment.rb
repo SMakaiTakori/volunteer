@@ -1,6 +1,7 @@
 require_relative "./volunteer/version"
-require 'pry'
 require 'nokogiri'
+require 'open-uri'
+require 'pry'
 require_relative './scraper'
 require_relative './volunteer'
 require_relative './volunteer_controller'

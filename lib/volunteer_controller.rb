@@ -1,22 +1,16 @@
 
-require "pry"
-
 class Volunteer::VolunteerController
-
-    attr_accessor :current_opportunity
     
     def welcome
         puts "Welcome to the ATL Volunteer App!"
         puts "Please type 'list' to see a list of current volunteer opportunities focused on reducing Hunger in Atlanta, GA : "   
         make_list
         get_input
-        # prompt
     end   
 
     def make_list
         list_array = Volunteer::Scraper.scrape_titles
-        Volunteer::Volunteer.create_from_collection(list_array)    
-         
+        Volunteer::Volunteer.create_from_collection(list_array)          
     end
 
     def get_input           
