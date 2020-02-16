@@ -33,7 +33,7 @@ Commands available:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/Volunteer.
+Bug reports and pull requests are welcome on GitHub at https://github.com/SMakaiTakori/Volunteer.
 
 
 ## License
