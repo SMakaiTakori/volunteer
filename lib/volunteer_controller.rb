@@ -51,7 +51,7 @@ class Volunteer::VolunteerController
     def display_list
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         Volunteer::Volunteer.all.each.with_index do |list, index|            
-            puts "#{index + 1}. #{list.title}, Organization Name : #{list.organization} "           
+            puts "#{index + 1}. #{list.title}, "   " Organization Name - #{list.organization} "           
         end                    
     end        
    
