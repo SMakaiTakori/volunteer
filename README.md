@@ -1,6 +1,6 @@
 ## CLI Project
 
-Welcome to my Volunteer App! This app is focused on helping users find volunteer opportunities focused on reducing hunger in Atlanta, GA.
+Welcome to my Volunteer App! This app was created to help users find volunteer opportunities focused on reducing hunger in Atlanta, GA.
 
 ## Gems Required
 
