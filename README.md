@@ -11,9 +11,9 @@ And then execute:
 
     $ bundle install
 
-Or install it yourself as:
+To run program :
 
-    $ gem install Volunteer
+    bin/run
 
 ## Usage
 
