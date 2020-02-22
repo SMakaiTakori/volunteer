@@ -8,8 +8,7 @@ class Volunteer::VolunteerController
     end   
 
     def make_list
-        list_array = Volunteer::Scraper.scrape_titles
-        Volunteer::Volunteer.create_from_collection(list_array)          
+        Volunteer::Scraper.scrape_titles               
     end
 
     def get_input           
@@ -49,31 +48,33 @@ class Volunteer::VolunteerController
     end
 
     def display_list
+        
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
+        
         Volunteer::Volunteer.all.each.with_index do |list, index|            
             puts "#{index + 1}. #{list.title}, "   " Organization Name - #{list.organization} "           
         end                    
     end        
    
-    def display_details(input) 
-         
-        description = Volunteer::Scraper.scrape_details(Volunteer::Volunteer.all[input - 1].learn_more)[0][:description] 
-        address = Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)[0][:address]   
-        date = Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)[0][:date]   
-        requirements = Volunteer::Scraper.scrape_details( Volunteer::Volunteer.all[input - 1].learn_more)[0][:requirements]   
-        
+    def display_details(input)      
+            
+        description =  Volunteer::Volunteer.all[input- 1].details[0][:description] 
+        address = Volunteer::Volunteer.all[input- 1].details[0][:address]
+        date = Volunteer::Volunteer.all[input- 1].details[0][:date]
+        requirements =  Volunteer::Volunteer.all[input- 1].details[0][:requirements] 
+            
         puts "Here is a list of details for volunteer opportunity number #{input} : "
 
         puts " "
         puts "Description: "
-        puts description 
+        puts description
         puts " "
         puts "Address: "   
-        puts address 
+        puts address
         puts " "
         puts "Date: "
-        if date != ""
-            puts date 
+        if  date != ""
+            puts date
         else
             puts "No date listed"
         end  

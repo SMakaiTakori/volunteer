@@ -1,24 +1,20 @@
 class Volunteer::Volunteer
 
-attr_accessor :name, :title, :organization, :address, :description, :date, :requirements, :learn_more
+attr_accessor :title, :organization, :address, :description, :date, :requirements, :learn_more, :details
 
     @@all = []
-    
-    def initialize(attributes)
-        attributes.each do |key, value|
-            self.send("#{key}=", value)
-        end
-        @@all << self                
+
+    def initialize(title,organization,details)
+        
+        @title = title
+        @organization = organization
+        @details = details    
+                        
+        @@all << self
     end
 
-    def self.create_from_collection(list_array)
-        list_array.each do |hash|
-            self.new(hash)
-        end
-    end 
-
     def self.all
-        @@all        
-    end    
+        @@all   
+    end 
 
 end

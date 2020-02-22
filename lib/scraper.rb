@@ -6,11 +6,13 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
         main_page = Nokogiri::HTML(open(BASE_PATH))
     
         main_page.css("div.searchitem.PUBLIC").collect do |info|
-            {:title => info.css("a.link-body-text.psr_link").text.strip,
-            :organization => info.css("span.orgid a.psr_link").text.strip,
-            :learn_more => info.css("a").attr("href").value
-            }                                           
-        end   
+          
+            title = info.css("a.link-body-text.psr_link").text.strip
+            organization = info.css("span.orgid a.psr_link").text.strip
+            learn_more = info.css("a").attr("href").value
+            details = self.scrape_details(learn_more)
+            Volunteer::Volunteer.new(title, organization,details)                                        
+        end        
     end 
 
     def self.scrape_details(learn_more)
@@ -22,7 +24,6 @@ BASE_PATH = "https://www.volunteermatch.org/search/?l=Atlanta,%20GA,%20USA&categ
              :date => details.css("div.date-start").text,
              :requirements => details.css("ul.list li.item").text        
             }   
-            # binding.pry
         end
     end
 end
