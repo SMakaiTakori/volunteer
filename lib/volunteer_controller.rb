@@ -48,7 +48,7 @@ class Volunteer::VolunteerController
     end
 
     def display_list
-        
+
         puts "Here is a list of opportunities and organizations looking for volunteers in Atlanta, GA : "
         
         Volunteer::Volunteer.all.each.with_index do |list, index|            
@@ -56,12 +56,12 @@ class Volunteer::VolunteerController
         end                    
     end        
    
-    def display_details(input)      
-            
-        description =  Volunteer::Volunteer.all[input- 1].details[0][:description] 
-        address = Volunteer::Volunteer.all[input- 1].details[0][:address]
-        date = Volunteer::Volunteer.all[input- 1].details[0][:date]
-        requirements =  Volunteer::Volunteer.all[input- 1].details[0][:requirements] 
+    def display_details(input)        
+
+        description =  Volunteer::Volunteer.all[input- 1].description
+        address = Volunteer::Volunteer.all[input- 1].address
+        date = Volunteer::Volunteer.all[input- 1].date
+        requirements =  Volunteer::Volunteer.all[input- 1].requirements
             
         puts "Here is a list of details for volunteer opportunity number #{input} : "
 
